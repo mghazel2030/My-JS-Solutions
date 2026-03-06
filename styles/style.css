@@ -1,0 +1,173 @@
+/*******************************************************************
+ *  CSS: Styling the content Previous Overview: Your first website
+ *******************************************************************/
+/* CSS (Cascading Style Sheets) is the code that styles web content. 
+ *  - This article walks you through a basic understanding of CSS.
+ *  - How it works and how to improve the look and feel of the content 
+ *   structure you created in the previous article.
+ *------------------------------------------------------------------*/
+/* What is CSS?
+*------------------------------------------------------------------*/
+/*  - Like HTML, CSS is not a programming language. 
+ *  - It's not a markup language either. 
+ *  - CSS is a style sheet language. 
+ *  - CSS is used to style HTML elements: 
+ *     - You select the elements you want to style 
+ *     - Set values for their style properties, which define how 
+ *      they will look.
+ *------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
+/*  CSS syntax basics:
+*------------------------------------------------------------------*/
+/* In the previous CSS example, p is called a selector:
+ *      - it selects the element(s) to style. 
+ *      - In particular, p selects all the paragraphs in the HTML. 
+ *      - The line inside the curly braces ({ }) is called a declaration.
+ *      - It sets a value for a specific property. 
+ *      - In this case, the property is color, which controls the text 
+ *        color of the paragraphs, and the property value set is red.
+ *      - Within a ruleset, you must use a semicolon (;) to separate 
+ *        one declaration from the next. 
+ *      - Within each declaration, you must use a colon (:) to separate 
+ *        the property and its value.
+ * 
+ * - The whole structure is called a ruleset. 
+ *------------------------------------------------------------------*/
+ /* Formatting a paragraph (p) style:
+  *------------------------------------------------------------------*/
+ p {
+  font-family: sans-serif; /* text-font */
+  color: rgb(0, 0, 255); /*text color */
+  background-color: rgb(255, 255, 255); /* background color */
+  border: 1px solid rgb(0, 255, 0);       /* border thickness and color */
+  margin-bottom: 10px;              /* bottom margin size */
+  margin-left: 10px; /* Adds 20 pixels of space to the left of each list item */
+  padding: 5px /*The space around the content. */
+}
+ /*------------------------------------------------------------------*/
+ /* Formatting a list (li) style:
+  *------------------------------------------------------------------*/
+li {
+  background-color: rgb(255, 255, 255); /* background color */
+  border: 1px solid rgb(0, 255, 0);       /* border thickness and color */
+  margin-bottom: 10px;              /* bottom margin size */
+  margin-left: 10px; /* Adds 20 pixels of space to the left of each list item */
+  color: rgb(0, 0, 255); /*text color */
+  padding: 5px /*The space around the content. */
+}
+
+/*------------------------------------------------------------------*/
+/* Improving the text:
+ *------------------------------------------------------------------*/
+/* - Let's return to our example and use CSS to improve the appearance 
+ *   of the text. 
+ *      - We'll set a new font for the page and change some text settings 
+ *        for different elements.
+ *------------------------------------------------------------------*/
+body {
+  font-family: "Verdana", "Arial", sans-serif; /* Tries Verdana first, then Arial, then any generic sans-serif font */
+  font-size: 16px; /* A good base size for readability */
+  line-height: 1.5; /* Improves readability by adding space between lines */
+}
+
+/*------------------------------------------------------------------*/
+/* Improving font and text stypes:
+ *------------------------------------------------------------------*/
+/* Now let's set some font and text styles on our <h1>, <li>, and <p> elements. We'll set new font-size values for each element. We'll also center the heading using text-align and increase the line-height and letter-spacing of::after
+ *      - The paragraphs
+ *      - List items 
+ * to make the body content more readable.
+*------------------------------------------------------------------*/
+/* CSS styling of h1-heading */
+h1 {
+  font-size: 40px;
+  text-align: left;
+  color: rgb(0, 0, 255); /*test color */
+}
+
+h2 {
+  font-size: 24px;
+  text-align: left;
+  color: rgb(0, 0, 255); /*test color */
+}
+
+/* CSS styling of paragraph and list */
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/*------------------------------------------------------------------*/
+/* Changing the page color:
+ *------------------------------------------------------------------*/
+html {
+  background-color: #b2e99c;
+}
+
+/*------------------------------------------------------------------*/
+/* Styling the body:
+ *------------------------------------------------------------------*/
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #b2e99c;
+  padding: 0 20px 20px 20px;
+  border: 5px solid rgb(0, 0, 255);
+}
+
+/*------------------------------------------------------------------*/
+/* Positioning and styling the main page title:
+ *------------------------------------------------------------------*/
+h1, h2 {
+  margin: 0;
+  padding: 20px 0;
+  color: #0c82f1;
+  text-shadow: 3px 3px 1px rgb(146, 233, 146);
+}
+
+/*------------------------------------------------------------------*/
+/* Centering the image:
+ *------------------------------------------------------------------*/
+img {
+  display: block;
+  margin: 0 auto;
+  /*max-width: 100%;*/
+}
+
+/*------------------------------------------------------------------*/
+/* Table formatting:
+ *------------------------------------------------------------------*/
+/* A basic, well-styled table can be achieved with a few lines of CSS: */
+table {
+  width: 100%; /* Make the table responsive to its container width */
+  border-collapse: collapse; /* Collapse borders into a single line */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Add a light border to all cells */
+  padding: 8px; /* Add padding for content spacing */
+  text-align: left; /* Align text to the left */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Gray background for even rows */
+}
+
+tr:hover {
+  background-color: #ddd; /* Hover effect on rows */
+}
+
+th {
+  background-color: #04AA6D; /* Green background for table headers */
+  color: white; /* White text for headers */
+}
+
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
